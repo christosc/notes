@@ -1,0 +1,18 @@
+An alternative way to use grep in vim seems to be the following:
+
+    1. Open a new split in vim. E.g.
+       C-w v
+       :enew
+
+    2. Read output of standard grep and paste it to this buffer:
+       :r! grep foo -rin .
+
+    3. Navigate to a grep result using gf and going to the line of interest.
+       3.1. Place the cursor over a filename in the grep results buffer and type gf.
+       3.2  Go to the line of interest within that file by the usual means.
+       
+In this way you have the results of grep alwyas open and you can also save them
+in order to revisit them.  You can also manipulate these results in some way
+(e.g. deleting some lines that aren't really pertinent to the task at hand),
+and saving the rest, so that you can continue your task later on from where you
+left it.
