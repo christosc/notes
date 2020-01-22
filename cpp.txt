@@ -1,5 +1,10 @@
-In order to search for the definition of a C++ member function/variable "foo" one can grep something like this:
+In order to search for the definition of a C++ member function or variable "foo" one can grep something like this:
 
 $ grep '::foo\>' -rin .
 
 The double colon seems to restrict a lot possible search results.
+
+Likewise one can grep all usages of a member function or variable by a regex such as the following:
+$ grep '[^:]foo' -rin .
+
+
