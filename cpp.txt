@@ -28,4 +28,13 @@ file:
 (and press TAB if you wish).
 
 
+3. One can also re-use previous grep commands in Vim to jump gain quickly to
+some previous function (given that the grep command didn't include didn't
+include "!", i.e. it was given as :grep, not :grep!).
+
+4. One can also use C-o and C-i to jump back and forth between previous
+locations visited in the buffers.
+
+
+
 
