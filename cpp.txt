@@ -10,7 +10,11 @@ to distinguish between similarly named functions.)
 Likewise one can grep all usages of a member function or variable by a regex
 such as the following:
 
-$ grep '[^:]foo' -rin .
+$ grep '[^: ]foo' -rin .
+
+(This regex avoids member function definitions, starting with ::, and member
+function declarations in the header file, which have a space before the
+function name.)
 
 2. In vim one can open the header file corresponding to a .c or .cpp file by
 giving the command:
